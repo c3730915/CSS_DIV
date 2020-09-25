@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动跳转</title>
+    <style>
+        p{
+            text-align: center;
+
+        }
+        span{
+            color: red;
+
+        }
+    </style>
+    <script>
+        var second = 5
+        function showtime() {
+            second--
+            if ((second<=0))
+            {
+                location.href= "https://www.baidu.com"
+            }
+            var time = document.getElementById("time")
+            time.innerHTML = second +"" //更改time的内容 用innerHtml
+
+        }
+        setInterval(showtime,1000) //每过一秒调用一次showtime
+
+    </script>
+</head>
+<body>
+<p>
+    <span id="time">5</span>秒之后，自动跳转到首页
+</p>
+
+</body>
+</html>

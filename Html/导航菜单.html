@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>navigation-menu</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            padding: 0px;
+            font-size: 12pt;
+        }
+
+        .menu-warp {
+            display: block;
+            border: 2px solid #14030394;
+            width: 220px;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        .menu-title {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #14030394;
+            color: white;
+        }
+
+        .menu-warp li {
+            list-style-type: none;
+            height: 30px;
+            line-height: 30px;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .menu-warp li a {
+            text-decoration: none;
+            color: #1d1b1b
+        }
+
+        .menu-warp li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #14030394
+        }
+
+        .menu-warp li:hover {
+            border: 1px solid #cccccc;
+            border-right: 0px;
+            box-shadow: 0 0 8px #cccccc;
+            cursor: pointer;
+            z-index: 6;
+        }
+
+        .menu-warp li:hover i {
+            display: none;
+        }
+
+        .menu-warp li i {
+            margin-left: 120px;
+            font-size: 20px;
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            width: 500px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            box-shadow: 0 0 8px #cccccc;
+            left: 210px;
+            top: 35px;
+            padding: 0px 10px;
+        }
+
+        .menu-warp li:hover .sub-menu {
+            display: block;
+            z-index: 5;
+        }
+
+        .menu-warp li:hover span {
+            display: inline-block;
+            background-color: #ffffff;
+            z-index: 6;
+            height: 30px;
+            width: 20px;
+            float: right;
+            position: relative;
+        }
+
+        .sub-menu:hover {
+            cursor: default;
+        }
+
+        .sub-menu dl {
+            display: block;
+            border-bottom: 1px solid #cccccc;
+            margin-top: 5px;
+            overflow: hidden;
+            margin-bottom: 0px;
+            margin: 0px;
+            padding: 5px 0;
+        }
+
+        .sub-menu dl dt {
+            display: block;
+            float: left;
+            text-align: right;
+            height: 22px;
+            width: 60px;
+        }
+
+        .sub-menu dl dt a {
+            font-weight: bold;
+            font-size: 10pt;
+            color: #14030394;
+            text-decoration: underline;
+        }
+
+        .sub-menu dl dd a {
+            font-size: 9pt;
+            color: #1d1b1b;
+            border-left: 1px solid #cccccc;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<ul class="menu-warp">
+    <div class="menu-title">菜单标题</div>
+    <li>
+        <a href="#">一级菜单</a>
+        <i class="fa fa-angle-right"></i>
+        <span></span>
+        <div class="sub-menu">
+            <dl>
+                <dt>
+                    <a href="#">大分类</a>
+                </dt>
+                <dd>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">大分类</a>
+                </dt>
+                <dd>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">大分类</a>
+                </dt>
+                <dd>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">大分类</a>
+                </dt>
+                <dd>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">大分类</a>
+                </dt>
+                <dd>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">大分类</a>
+                </dt>
+                <dd>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#">大分类</a>
+                </dt>
+                <dd>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                    <a href="#">小类型</a>
+                </dd>
+            </dl>
+        </div>
+    </li>
+    <li>
+        <a href="#">一级菜单</a>
+        <i class="fa fa-angle-right"></i>
+    </li>
+    <li>
+        <a href="#">一级菜单</a>
+        <i class="fa fa-angle-right"></i>
+    </li>
+    <li>
+        <a href="#">一级菜单</a>
+        <i class="fa fa-angle-right"></i>
+        <span></span>
+    </li>
+    <li>
+        <a href="#">一级菜单</a>
+        <i class="fa fa-angle-right"></i>
+        <span></span>
+    </li>
+    <li>
+        <a href="#">一级菜单</a>
+        <i class="fa fa-angle-right"></i>
+        <span></span>
+    </li>
+    <li>
+        <a href="#">一级菜单</a>
+        <i class="fa fa-angle-right"></i>
+        <span></span>
+    </li>
+    <li>
+        <a href="#">一级菜单</a>
+        <i class="fa fa-angle-right"></i>
+        <span></span>
+    </li>
+    <li>
+        <a href="#">一级菜单</a>
+        <i class="fa fa-angle-right"></i>
+        <span></span>
+    </li>
+    <li>
+        <a href="#">一级菜单</a>
+        <i class="fa fa-angle-right"></i>
+        <span></span>
+    </li>
+</ul>
+<script src="" async defer></script>
+</body>
+
+</html>
